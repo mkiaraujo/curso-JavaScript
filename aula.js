@@ -1,17 +1,37 @@
-// Criar função para mostrar os números primos
+// camelCase umDoisTresQuatro
+// function criarCelular(marcaCelular,tamanhoTela,capacidadeBateria){
+//     return{
+//         marcaCelular,
+//         tamanhoTela,
+//         capacidadeBateria,
+//         ligar(){
+//             console.log("Fazendo ligação...")
+//         }
+//     }
+// }
 
+// Pascal Case - UmDoisTresQuatro
 
-exibirNumerosPrimos(15);
-
-function exibirNumerosPrimos(limite) {
-    for (let numero = 2; numero <= limite; numero++)
-       if (numeroPrimo(numero)) console.log(numero);
-   
+function Celular(marcaCelular,tamanhoTela,capacidadeBateria){
+    this.marcaCelular = marcaCelular,
+    this.tamanhoTela = tamanhoTela,
+    this.capacidadeBateria = capacidadeBateria,
+    this.ligar = function() {
+        console.log("Fazendo Ligação...");
+    }
 }
 
-function numeroPrimo(numero){
-    for (let divisor = 2; divisor < numero; divisor++)
-        if(numero % divisor === 0)
-            return false;
-    return true;
+const celular = new Celular('asus',5.5,5000);
+console.log(celular);
+
+function Carro(marca,modelo,potencia){
+    this.marca = marca,
+    this.modelo = modelo,
+    this.potencia = potencia,
+    this.ligar = function(){
+        console.log("Ligando o carro...");
+    }
 }
+
+const carro = new Carro('toyota','etios',150);
+console.log(carro);
