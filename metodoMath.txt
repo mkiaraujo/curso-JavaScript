@@ -3,5 +3,6 @@ Pesquisar no google
 math javascript
 string javascript
 javascript escape sequences
+javascript Date
 
 - verificar o link developer.mozilla
