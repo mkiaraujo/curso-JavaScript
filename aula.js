@@ -1,37 +1,26 @@
-// camelCase umDoisTresQuatro
-// function criarCelular(marcaCelular,tamanhoTela,capacidadeBateria){
-//     return{
-//         marcaCelular,
-//         tamanhoTela,
-//         capacidadeBateria,
-//         ligar(){
-//             console.log("Fazendo ligação...")
-//         }
-//     }
-// }
+//Javascript - Objeto Endereço
 
-// Pascal Case - UmDoisTresQuatro
+//Criar um objeto endereço que comtenha:
+//Rua
+//Cidade
+//CEP
+//exibirEndereco(endereco)
 
-function Celular(marcaCelular,tamanhoTela,capacidadeBateria){
-    this.marcaCelular = marcaCelular,
-    this.tamanhoTela = tamanhoTela,
-    this.capacidadeBateria = capacidadeBateria,
-    this.ligar = function() {
-        console.log("Fazendo Ligação...");
+function Endereco(rua,cidade,cep){
+    return {
+        rua, 
+        cidade,
+        cep,
+        teste(){           
+            console.log(cidade,rua,cep)
+        }     
     }
 }
 
-const celular = new Celular('asus',5.5,5000);
-console.log(celular);
+const endereco1 = Endereco("Rua Castanheiras","Águas Claras","14528-06");
 
-function Carro(marca,modelo,potencia){
-    this.marca = marca,
-    this.modelo = modelo,
-    this.potencia = potencia,
-    this.ligar = function(){
-        console.log("Ligando o carro...");
-    }
-}
+endereco1.teste();
+console.log(endereco1);
 
-const carro = new Carro('toyota','etios',150);
-console.log(carro);
+
+
